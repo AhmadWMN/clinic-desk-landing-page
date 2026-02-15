@@ -1,4 +1,4 @@
-import type { Direction, LandingContent } from "../lib/i18n";
+﻿import type { Direction, LandingContent } from "../lib/i18n";
 
 interface PricingOfferProps {
   content: LandingContent["pricing"];
@@ -29,9 +29,7 @@ export default function PricingOffer({
             </button>
           </div>
           <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-            <h3 className="text-lg font-semibold text-slate-900">
-              {content.includedTitle}
-            </h3>
+            <h3 className="text-lg font-semibold text-slate-900">{content.includedTitle}</h3>
             <ul className="mt-4 space-y-2 text-sm text-slate-700">
               {content.includedItems.map((item) => (
                 <li key={item} className="flex items-start gap-2">

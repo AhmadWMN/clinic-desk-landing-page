@@ -81,7 +81,10 @@ export default function LandingPage() {
             className="inline-flex items-center gap-3 rounded-lg px-1 py-1 transition hover:bg-slate-50"
             aria-label="Clinic Desk Home"
           >
-            <span className="inline-flex h-16 w-16 items-center justify-center rounded-xl">
+            <span
+              className="inline-flex h-16 w-16 items-center justify-center rounded-xl border border-[var(--surface-soft)]"
+              style={{ background: "unset", backgroundColor: "unset" }}
+            >
               <img
                 src={COMPANY_LOGO_SRC}
                 alt="Company logo"
